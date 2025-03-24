@@ -221,7 +221,7 @@ header {
   height: 251px;
 }
 
-.feature-item::before {
+/* .feature-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -230,11 +230,15 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background--color);
+} */
+
+.svg-icon {
+  background-color: var(--background--color);
 }
 
-.icon-antenna::before {
+/* .icon-antenna::before {
   background-image: url(../images/antenna.svg);
-}
+} */
 
 .icon-clock::before {
   background-image: url(../images/clock.svg);
