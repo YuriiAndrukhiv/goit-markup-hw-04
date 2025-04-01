@@ -340,28 +340,19 @@ header {
   width: 44px;
   height: 44px;
 
-  color: var(--social-networks-color);
   border-radius: 50%;
+  color: var(--social-networks-color);
   background-color: var(--white-color);
 }
 
 .social-networks .link:hover,
 .social-networks .link:focus {
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
 .social-icon {
-  /* color: var(--social-networks-color); */
-  fill:currentColor;
-}
-
-.social-icon {
-  fill: var(--white-color);
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  color: var(--white-color);
+  fill: currentColor;
 }
 
 /* Regular customers */
@@ -382,12 +373,12 @@ header {
   border-radius: 4px;
 }
 
-.customers-image {
-  padding: auto;
-}
-
 .customers-item + .customers-item {
   margin-left: 30px;
+}
+
+.customer-link {
+padding: auto;
 }
 
 /*-------------------------PORTFOLIO--------------------*/
@@ -534,7 +525,6 @@ address {
   font-size: 14px;
   line-height: 24px;
   color: var(--white-color);
-  background-color: chocolate;
 }
 
 .mail {
@@ -547,7 +537,6 @@ address {
   font-size: 14px;
   line-height: 24px;
   color: var(--white-color);
-  background-color: chocolate;
 }
 /* Join-in */
 .join-in-title,
@@ -555,7 +544,6 @@ address {
   display: block;
   margin-bottom: 20px;
 
-  background-color: chocolate;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--white-color);
@@ -570,36 +558,19 @@ address {
 }
 
 .social-media .link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
 
   background-color: rgba(255, 255, 255, 0.1);
-  background-repeat: no-repeat;
-  background-position: center;
-  background: size 20px;
   border-radius: 50%;
 }
 
 .social-media .link:hover,
 .social-media .link:focus {
   background-color: var(--accent-color);
-}
-
-.footer-instagram {
-  background-image: url(../images/footer-instagram.svg);
-}
-
-.footer-twitter {
-  background-image: url(../images/footer-twitter.svg);
-}
-
-.footer-facebook {
-  background-image: url(../images/footer-facebook.svg);
-}
-
-.footer-linkedin {
-  background-image: url(../images/footer-linkedin.svg);
 }
 
 /* Subscribe */
