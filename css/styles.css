@@ -212,8 +212,6 @@ header {
 
 .background {
   display: block;
-  width: 270px;
-  height: 120px;
   padding: 25px 100px;
   margin-bottom: 10px;
 
@@ -365,22 +363,31 @@ header {
   justify-content: start;
 }
 
-.customers-item {
+.customers-item + .customers-item {
+  margin-left: 30px;
+}
+
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: var(--social-networks-color);
 }
 
-.customers-item + .customers-item {
-  margin-left: 30px;
+.customer-link:hover,
+.customer-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
-/* .customer-link {
-  display: block;
-  padding: 50;
-} */
+.customer-icon {
+  fill: currentColor;
+}
 
 /*-------------------------PORTFOLIO--------------------*/
 
