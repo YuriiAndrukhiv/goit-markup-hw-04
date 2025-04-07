@@ -120,14 +120,20 @@ header {
   margin-left: 30px;
 }
 
+.header-contacts .link {
+  color: var(--secondary-text-color);
+}
+
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--accent-color);
 }
 
-.envelope,
-.smartphone {
+.icon-envelope,
+.icon-smartphone {
   margin-right: 10px;
+
+  fill: currentColor;
 }
 
 /* Hero */
