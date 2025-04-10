@@ -454,6 +454,8 @@ header {
 }
 
 .portfolio-item {
+  position: relative;
+
   width: 370px;
   height: 404px;
   margin-right: 45px;
@@ -478,6 +480,14 @@ header {
 .portfolio-list a:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.thumb {
+  position: relative;
+}
+
+.thumb:hover .portfolio-info {
+  opacity: 1;
 }
 
 .portfilio-image {
@@ -510,23 +520,24 @@ header {
   border-bottom: 1px solid #eee;
 }
 
-/* .portfolio-info {
+.portfolio-info {
   position: absolute;
 
   margin: 0;
+  padding: 63px 24px;
   width: 100%;
   height: 100%;
 
   font-size: 18px;
   line-height: 28px;
   color: var(--white-color);
-  background-color: var(--accent-color);
+  background: rgba(33, 150, 243, 0.9);
 
   opacity: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
 /*----------------------FOOTER--------------------------*/
 
