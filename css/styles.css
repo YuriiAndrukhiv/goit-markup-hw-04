@@ -106,7 +106,7 @@ header {
   color: var(--accent-color);
 }
 
-.current {
+.site-nav .current {
   color: var(--accent-color);
 }
 
