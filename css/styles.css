@@ -13,6 +13,9 @@
   --background--color: #f5f4fa;
   --footer-background: #2f303a;
   --social-networks-color: #afb1b8;
+
+  /*  Function */
+  --time-fuction: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -93,6 +96,8 @@ header {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: color 250ms var(--time-fuction);
 
   text-decoration: none;
   font-weight: 500;
@@ -373,6 +378,9 @@ header {
   width: 44px;
   height: 44px;
 
+  transition: color 250ms var(--time-fuction),
+    background-color 250ms var(--time-fuction);
+
   border-radius: 50%;
   color: var(--social-networks-color);
   background-color: var(--white-color);
@@ -409,6 +417,8 @@ header {
   width: 170px;
   height: 90px;
 
+  transition: color 250ms var(--time-fuction), border 250ms var(--time-fuction);
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--social-networks-color);
@@ -444,6 +454,9 @@ header {
 
 .filters button {
   padding: 6px 22px;
+
+  transition: box-shadow 250ms var(--time-fuction),
+    color 250ms var(--time-fuction), background-color 250ms var(--time-fuction);
 
   text-decoration: none;
   font-weight: 500;
@@ -488,6 +501,8 @@ header {
 }
 
 .portfolio-list a {
+  transition: box-shadow 250ms var(--time-fuction);
+
   display: block;
   text-decoration: none;
   color: inherit;
@@ -523,6 +538,8 @@ header {
   padding: 63px 24px;
   width: 100%;
   height: 100%;
+
+  transition: opacity 250ms var(--time-fuction);
 
   font-size: 18px;
   line-height: 28px;
@@ -629,6 +646,8 @@ address {
   justify-content: center;
   width: 44px;
   height: 44px;
+
+  transition: background-color 250ms var(--time-fuction);
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
