@@ -14,6 +14,9 @@
   --footer-background: #2f303a;
   --social-networks-color: #afb1b8;
 
+  /* Delay time */
+  --time-delay: 250ms;
+
   /*  Function */
   --time-fuction: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -97,7 +100,7 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color 250ms var(--time-fuction);
+  transition: color var(--time-delay) var(--time-fuction);
 
   text-decoration: none;
   font-weight: 500;
@@ -378,8 +381,8 @@ header {
   width: 44px;
   height: 44px;
 
-  transition: color 250ms var(--time-fuction),
-    background-color 250ms var(--time-fuction);
+  transition: color var(--time-delay) var(--time-fuction),
+    background-color var(--time-delay) var(--time-fuction);
 
   border-radius: 50%;
   color: var(--social-networks-color);
@@ -417,7 +420,8 @@ header {
   width: 170px;
   height: 90px;
 
-  transition: color 250ms var(--time-fuction), border 250ms var(--time-fuction);
+  transition: color var(--time-delay) var(--time-fuction),
+    border var(--time-delay) var(--time-fuction);
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -455,8 +459,9 @@ header {
 .filters button {
   padding: 6px 22px;
 
-  transition: box-shadow 250ms var(--time-fuction),
-    color 250ms var(--time-fuction), background-color 250ms var(--time-fuction);
+  transition: box-shadow var(--time-delay) var(--time-fuction),
+    color var(--time-delay) var(--time-fuction),
+    background-color var(--time-delay) var(--time-fuction);
 
   text-decoration: none;
   font-weight: 500;
@@ -500,27 +505,27 @@ header {
   margin-bottom: 0;
 }
 
-.portfolio-list a {
-  transition: box-shadow 250ms var(--time-fuction);
+.portfolio-item:hover .portfilio-overlay,
+.portfolio-item:focus .portfilio-overlay {
+  opacity: 1;
+}
+
+.portfolio-list .portfilio-link {
+  transition: box-shadow var(--time-delay) var(--time-fuction);
 
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
-.portfolio-list a:hover,
-.portfolio-list a:focus {
+.portfolio-list .portfilio-link:hover,
+.portfolio-list .portfilio-link:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-thumb {
   position: relative;
-}
-
-.portfolio-thumb:hover .portfilio-overlay,
-.portfolio-thumb:focus .portfilio-overlay {
-  opacity: 1;
 }
 
 .portfilio-image {
@@ -539,7 +544,7 @@ header {
   width: 100%;
   height: 100%;
 
-  transition: opacity 250ms var(--time-fuction);
+  transition: opacity var(--time-delay) var(--time-fuction);
 
   font-size: 18px;
   line-height: 28px;
@@ -647,7 +652,7 @@ address {
   width: 44px;
   height: 44px;
 
-  transition: background-color 250ms var(--time-fuction);
+  transition: background-color var(--time-delay) var(--time-fuction);
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
